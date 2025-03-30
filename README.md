@@ -10,28 +10,52 @@ An AI-powered fraud detection assistant that helps users verify if messages, per
 - Recommendations for user actions
 - Simple, intuitive chat interface
 
+## Prerequisites
+
+1. Python 3.8 or higher installed on your system
+2. Git for cloning the repository
+3. Windows operating system (for run.bat)
+
 ## Setup
 
-1. Make sure you have Python 3.8+ installed
-2. Install required packages:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/dhanushperumalla/Fraud-Suraksha
+   cd fraud-suraksha
    ```
-   pip install -r requirements.txt
-   ```
-3. Create a `.env` file in the project root with your Google AI API key:
+
+2. Create a `.env` file in the project root with your Google AI API key:
    ```
    GOOGLE_API_KEY=your_google_api_key_here
    ```
-4. Ensure `GMaps.pdf` is in the project directory (this is pre-loaded with Google Maps scam information)
+
+3. Run the startup utility:
+   ```bash
+   run.bat
+   ```
+
+   The utility will:
+   - Create a virtual environment if it doesn't exist
+   - Install required dependencies
+   - Provide options to launch the app or reset the database
 
 ## Running the App
 
-To start the Fraud Suraksha assistant:
+Using the startup utility (run.bat), you have three options:
 
-```
-streamlit run app.py
-```
+1. **Launch Fraud Suraksha app** - Starts the main application
+2. **Reset database** - Fixes connection issues by resetting the vector database
+3. **Exit** - Closes the utility
 
 The app will be available at http://localhost:8501 in your web browser.
+
+## Troubleshooting
+
+If you encounter database connection errors:
+
+1. Choose option 2 "Reset database" from the run.bat menu
+2. Wait for the reset to complete
+3. Return to the menu and choose option 1 to launch the app
 
 ## Usage
 
@@ -40,24 +64,9 @@ The app will be available at http://localhost:8501 in your web browser.
 3. Review the AI's assessment and recommendations
 4. Continue the conversation for more detailed analysis
 
-## Troubleshooting
-
-If you encounter the error "Could not connect to tenant default_tenant" or other database-related issues:
-
-1. Run the reset script to clear the database:
-   ```
-   python reset_db.py
-   ```
-2. Restart the application:
-   ```
-   streamlit run app.py
-   ```
-
-This will recreate the vector database from scratch and should resolve most connection issues.
-
 ## Example Use Cases
 
 - Verifying if a Google Maps related message is legitimate
 - Checking if a request for reviews/ratings is a scam
 - Assessing potential phishing attempts
-- Evaluating suspicious business practices 
+- Evaluating suspicious business practices
