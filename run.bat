@@ -33,7 +33,7 @@ goto menu
 :reset
 echo.
 echo Resetting database...
-python reset_db.py
+python src/reset_db.py
 echo.
 echo Press any key to return to the menu...
 pause > nul
@@ -43,7 +43,7 @@ goto menu
 echo.
 echo Launching Fraud Suraksha...
 echo.
-streamlit run app.py
+streamlit run src/app.py
 goto end
 
 :end
