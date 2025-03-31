@@ -7,3 +7,4 @@ langchain-chroma
 langchain_text_splitters
 streamlit
 python-dotenv
+pypdf
