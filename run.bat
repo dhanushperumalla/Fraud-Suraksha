@@ -6,7 +6,8 @@ echo.
 if not exist .venv (
     echo Creating virtual environment...
     pip install virtualenv
-    virtualenv -p python3.10 .venv
+    virtualenv -p python .venv
+    echo Activating virtual environment...
     call .venv\Scripts\activate
     pip install -r requirements.txt
 ) else (
