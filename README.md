@@ -2,6 +2,9 @@
 
 An AI-powered fraud detection assistant that helps users verify if messages, persons, or situations are potentially fraudulent.
 
+## 🎥 Demo
+https://github-production-user-asset-6210df.s3.amazonaws.com/118119552/444748979-99b99e13-bddc-43c2-a1e8-eef7cd6bdf71.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20250517%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250517T054304Z&X-Amz-Expires=300&X-Amz-Signature=1f208c1f95c97cf924cefa79e479d774734f975ae0e5021db774987b2d9f2dab&X-Amz-SignedHeaders=host
+
 ## Features
 
 - RAG-based fraud analysis using Google's Gemini model
